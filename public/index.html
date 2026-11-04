@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhaomu.id - Accessories Collection</title>
+    
+    <!-- BAGIAN CSS (Gaya Tampilan) -->
+    <style>
+        /* Reset Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff0f3; /* Latar belakang pink pastel lembut */
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- CSS HEADER --- */
+        header {
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-logo-area {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .header-icon {
+            width: 35px;
+            height: 35px;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjM1IiBoZWlnaHQ9IjM1Ij48cGF0aCBmaWxsPSIjZGI3MDkzIiBkPSJNMTIgMkwyIDIybDEwLTcgMTAtN3oiLz48L3N2Zz4=');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .header-brand {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #b0577d;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #777;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d87093;
+        }
+
+        /* --- CSS KARTU ZHAOMU.ID --- */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        .zhaomu-card {
+            background-color: #ffeef1; /* Warna kartu sesuai gambar */
+            border: 2px solid #ffd1dc;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            width: 100%;
+            max-width: 550px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(219, 112, 147, 0.1);
+        }
+
+        .zhaomu-logo-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 2px solid #ffb6c1;
+            background-color: #fff;
+        }
+
+        .zhaomu-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #b0577d;
+            margin-bottom: 0.3rem;
+        }
+
+        .zhaomu-subtitle {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #d87093;
+            margin-bottom: 0.8rem;
+        }
+
+        .zhaomu-slogan {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1.8rem;
+        }
+
+        .zhaomu-btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #b0577d;
+            border: 1.5px solid #ffb6c1;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+        }
+
+        .zhaomu-btn:hover {
+            background-color: #fff5f7;
+            border-color: #d87093;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        /* Responsif Layar Kecil */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 0.8rem;
+                padding: 1rem;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BAGIAN 1: HEADER WEB (Terletak di paling atas) -->
+    <header>
+        <div class="header-logo-area">
+            <div class="header-icon"></div>
+            <span class="header-brand">Zhaomu.id</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Katalog</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BAGIAN 2: KONTEN UTAMA & KARTU ZHAOMU.ID -->
+    <main>
+        <div class="zhaomu-card">
+            <!-- Gambar/Logo Lingkaran (Ganti src dengan link gambar Anda jika ada) -->
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgiIGhlaWdodD0iMTA4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmbWl0PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZGI3MDkzIj5Mb2dvPC90ZXh0Pjwvc3ZnPg==" alt="Zhaomu.id Logo" class="zhaomu-logo-img">
+            
+            <h1 class="zhaomu-title">Zhaomu.id</h1>
+            <div class="zhaomu-subtitle">🌸 Accessories Collection 🌸</div>
+            <p class="zhaomu-slogan">Small Accessories, Big Happiness ♡ Start From 5K</p>
+            
+            <a href="#" class="zhaomu-btn">💌 Lihat Profil & Tentang Zhaomu.id ⋆｡°✩</a>
+        </div>
+    </main>
+
+    <!-- BAGIAN 3: FOOTER -->
+    <footer>
+        <p>&copy; 2026 Zhaomu.id. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
